@@ -34,13 +34,13 @@ class EasyLab extends React.Component {
       <form onSubmit={this.handleSubmit}>
         <label>
           Число:
-          <input type="text" value={this.state.v1} onChange={this.handleChangev1} />
+          <input id="num"type="text" value={this.state.v1} onChange={this.handleChangev1} />
           Степень:
-          <input type="text" value={this.state.v2} onChange={this.handleChangev2} />
+          <input id="deg"type="text" value={this.state.v2} onChange={this.handleChangev2} />
         </label>
-        <input type="submit" value="Отправить" />
+        <input id="but"type="submit" value="Отправить" />
         Результат:
-        <input type="text" value={this.state.res} />
+        <input id="res" type="text" value={this.state.res} />
       </form>
     );
   }
